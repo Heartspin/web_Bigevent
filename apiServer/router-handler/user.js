@@ -11,8 +11,6 @@ const config = require('../config.js');
 exports.regUser = (req, res) => {
     // 获取用户信息
     const userInfo = req.body
-    console.log(userInfo);
-
 
     // 定义 SQL 语句
     const sqlStr = 'select * from ev_users where username = ?'
