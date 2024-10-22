@@ -1,0 +1,44 @@
+{
+  "id": "4718458",
+  "name": "大事件",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "201642",
+      "name": "3.1 评论",
+      "font_class": "31pinglun",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "880323",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "4503727",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "10273331",
+      "name": "退出",
+      "font_class": "tuichu",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "11124968",
+      "name": "文章",
+      "font_class": "16",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    }
+  ]
+}

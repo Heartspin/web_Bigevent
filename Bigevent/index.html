@@ -4,11 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>后台主页</title>
+    <link rel="stylesheet" href="./assets/lib/layui/css/layui.css" />
+    <link rel="stylesheet" href="./assets/fonts/iconfont.css">
+    <link rel="stylesheet" href="./assets/css/index.css" />
 </head>
-
-<body>
-    <h1>欢迎来到大事件</h1>
+<div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+        <div class="layui-logo layui-hide-xs layui-bg-black">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <!-- 头部区域（可配合layui 已有的水平导航） -->
+        <ul class="layui-nav layui-layout-right">
+            <li class="layui-nav-item layui-hide layui-show-sm-inline-block">
+                <a href="javascript:;" class="avater">
+                    <img src="//unpkg.com/outeres@0.0.10/img/layui/icon-v2.png" class="layui-nav-img">
+                    <span class="text-avatar"></span>
+                    个人中心&nbsp;&nbsp;
+                </a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">基本资料</a></dd>
+                    <dd><a href="javascript:;">更换头像</a></dd>
+                    <dd><a href="javascript:;">重置密码</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item layui-show-sm-inline-block" id="login-out">
+                <span class="iconfont icon-tuichu" style="cursor: default;"></span>退出登录
+            </li>
+            <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect>
+                <a href="javascript:;">
+                    <i class="layui-icon layui-icon-more-vertical"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <div class="avater">
+                <img src="//unpkg.com/outeres@0.0.10/img/layui/icon-v2.png" class="layui-nav-img">
+                <span class="text-avatar"></span>
+                <span class="welcome">欢迎 ***</span>
+            </div>
+            <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-this">
+                    <a href="/Bigevent/home/home.html" target="fm">
+                        <span class="iconfont icon-home"></span>首页
+                    </a>
+                </li>
+                <li class="layui-nav-item lay-accordion">
+                    <a class="" href="javascript:;">
+                        <span class="iconfont icon-16"></span>文章管理
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="javascript:;">
+                                <i class="layui-icon layui-icon-app"></i>文章类别</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">
+                                <i class="layui-icon layui-icon-spread-left"></i>文章列表
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">
+                                <i class="layui-icon layui-icon-upload-drag"></i>发布文章
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item lay-accordion">
+                    <a href="javascript:;">
+                        <span class="iconfont icon-user"></span>个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd>
+                            <a href="javascript:;">
+                                <i class="layui-icon layui-icon-file"></i>基本资料</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">
+                                <i class="layui-icon layui-icon-picture"></i>更换头像</a>
+                        </dd>
+                        <dd>
+                            <a href="javascript:;">
+                                <i class="layui-icon layui-icon-password"></i>重置密码
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <iframe name="fm" src="/Bigevent/home/home.html" frameborder="0"></iframe>
+    </div>
+</div>
+<div class="layui-footer">
+    <!-- 底部固定区域 -->
+    底部固定区域
+</div>
+</div>
 </body>
+<script src="./assets/lib/layui/layui.js"></script>
+<!-- 导入jquery -->
+<script src="./assets/lib/jquery/jquery.js"></script>
+<!-- 地址拼接 -->
+<script src="./assets/js/baseAPI.js"></script>
+<script src="./assets/js/index.js"></script>
 
 </html>
